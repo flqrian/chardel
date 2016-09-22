@@ -1,0 +1,73 @@
+#banner{
+		background-image: image-url("../images/background.jpg");
+		color: $white;
+		padding: 175px 0;
+		text-align: center;	
+		background-size: cover;
+		height: 974px;
+	h1 {
+		font-size: 80px;
+		letter-spacing: 2px;
+		font-family: 'Varela Round', sans-serif;
+	}	
+	p {
+		font-size: 20px;
+		font-family: 'Open Sans', sans-serif;
+		margin: 0 0 20px; 
+	}
+	.line-bottom{
+		border-bottom: 1px solid $white;
+		width: 50%;
+		display: inline-block;
+		margin: -100px;
+	}
+	
+	
+}
+
+
+#banner, #description, #newsletter {
+	position: relative;
+}
+
+#description {
+	.card{
+		padding: 20px;	
+		font-size: 15px;
+		h2{
+		font-size: 40px;
+		margin-top: -55px;
+		margin-bottom: 50px;
+		}
+		h3{
+		font-size: 30px;
+		}
+	}
+}
+
+#newsletter{
+	padding: 115px;
+	height: 574px;
+	text-align:center;
+	margin-bottom: 50px; 
+ 	h2 {
+	  	margin-top: 1em;  	
+	  	font-size: 60px;  	
+	  }
+}
+
+.scroll-btn{
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+  bottom: 20px;
+  left: 50%;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  &:hover{
+    color: white;
+  }
+}
+
+

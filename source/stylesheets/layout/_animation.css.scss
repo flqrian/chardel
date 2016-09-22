@@ -1,0 +1,89 @@
+@keyframes appearIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes appearIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes appearIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.appearIn {
+	opacity: 0;
+	animation: appearIn 3s 0.5s ease forwards;
+	-webkit-animation: appearIn 3s 0.5s ease forwards;
+	-moz-animazion: appearIn 3s 0.5s ease forwards;
+}
+
+$duration: 2s;
+$delay: 1.4s;
+
+$initial-top: -20px;
+$initial-opacity: 0;
+
+$final-opacity: 1;
+$final-top: 0;
+
+
+@keyframes fadeAndSlide {
+  0% {
+    opacity: $initial-opacity;
+    top: $initial-top;
+  }
+
+  100% {
+    opacity: $final-opacity;
+    top: $final-top;
+  }
+}
+
+@-webkit-keyframes fadeAndSlide {
+  0% {
+    opacity: $initial-opacity;
+    top: $initial-top;
+  }
+
+  100% {
+    opacity: $final-opacity;
+    top: $final-top;
+  }
+}
+
+@-moz-keyframes fadeAndSlide {
+  0% {
+    opacity: $initial-opacity;
+    top: $initial-top;
+  }
+
+  100% {
+    opacity: $final-opacity;
+    top: $final-top;
+  }
+}
+
+
+.fade-and-slide {
+  position: relative;
+  top: $initial-top;
+  opacity: $initial-opacity;
+  animation: fadeAndSlide $duration $delay ease forwards;
+  -webkit-animation: fadeAndSlide $duration $delay ease forwards;
+  -moz-animation: fadeAndSlide $duration $delay ease forwards;
+}

@@ -1,0 +1,108 @@
+---
+title: Florian Chardel's website
+---
+
+<div id="banner">
+    <div class="container">
+      <div class="row fade-and-slide">
+        <div class="col-xs-12 appearIn">
+          <h1>Florian Chardel</h1>
+        <p>I have no idea for a sentence here.</p>
+        <a href="#" class="btn-medium" data-toggle="modal" data-target="#uselessForm">Hey beautiful</a>    
+        </div>          
+      </div>
+    </div>
+    <div class="line-bottom"></div>  
+    <a href="#description">
+      <i class="fa fa-angle-down pulse scroll-btn">            
+      </i>
+    </a>        
+  </div>
+  
+    <div id="description" class="bg-blue">
+
+      <div class="container">
+        <div class="text-center padded">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="card title-height" data-sr="enter bottom and scale up 20% over 0.5s">
+                <h2>Me in 4 steps</h2>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="card" data-sr="enter bottom and scale up 20% over 1s">
+                  <%= image_tag "rugby.svg" %>   
+                  <h3>Sports</h3>
+                  <p>Love <strong>to practice</strong> any kind of sports.</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="card" data-sr="enter bottom and scale up 20% over 1.5s">
+                  <%= image_tag "headphones.svg" %> 
+                  <h3>Music</h3>
+                  <p>I'm sure that music makes your life <strong>happier</strong>.</p>
+                </div>            
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="card" data-sr="enter bottom and scale up 20% over 2s">
+                  <%= image_tag "desktop.svg" %> 
+                  <h3>Create</h3>
+                  <p>I also enjoy the process of <strong>creating.</strong></p>
+                </div>            
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="card" data-sr="enter bottom and scale up 20% over 2s">
+                  <%= image_tag "burger.svg" %> 
+                  <h3>Burgers</h3>
+                  <p><strong>Burgers</strong> are love, <strong>burgers</strong> are life.</p>
+                </div>
+              </div>
+            </div>  
+            <a href="#newsletter">
+              <i class="fa fa-angle-down fa-6 pulse scroll-btn"></i>
+            </a>            
+        </div>     
+      </div>
+
+    </div>    
+
+  <div id="newsletter" class="padded">
+    <h2>Get news from me</h2>
+    <p>This website will be updated as much as i can</p>
+    <form action="" class="form-inline">
+      <input type="email" class="form-control" placeholder="your email">
+      <input type="submit" value="Subscribe!" class="btn btn-primary">
+    </form>
+  </div>
+
+  <div id="map" style="width: 100%; height: 700px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.840507,2.702809);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#dadada"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#0091b2"}]}] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "You are here!"
+  });
+  </script>     
+
+ <script src='/vendor/scrollReveal.min.js'></script>
+  <script>
+
+    window.sr = new scrollReveal();
+
+  </script>
