@@ -42,6 +42,12 @@ configure :development do
   activate :livereload
 end
 
+set :css_dir, 'stylesheets'
+
+set :js_dir, 'javascripts'
+
+set :images_dir, 'images'
+
 ###
 # Helpers
 ###
@@ -61,6 +67,9 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
+    # Use relative URLs
+  activate :relative_assets
+  set :relative_links, true
 
 
 end
