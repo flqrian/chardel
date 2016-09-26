@@ -9708,7 +9708,7 @@ button.close {
 
 /* line 1, /Users/sketch/Desktop/chardel/source/stylesheets/pages/_home.css.scss */
 #banner {
-  background-image: url("/images/background.jpg");
+  background-image: url("../images/background.jpg");
   color: #FCF7F8;
   padding: 175px 0;
   text-align: center;
