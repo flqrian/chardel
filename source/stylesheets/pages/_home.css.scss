@@ -38,7 +38,7 @@
 		h2{
 		font-size: 40px;
 		margin-top: -55px;
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 		}
 		h3{
 		font-size: 30px;
@@ -65,9 +65,9 @@
   left: 50%;
   text-align: center;
   font-size: 60px;
-  color: white;
+  color: $white;
   &:hover{
-    color: white;
+    color: $white;
   }
 }
 
