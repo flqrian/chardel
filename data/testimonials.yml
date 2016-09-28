@@ -1,0 +1,6 @@
+- name: Murky
+  message: "Mrglrglmrglmrrrlggg!"
+  image_file: murky.png
+- name: Kaonashi
+  message: "..."
+  image_file: kaonashi.png
